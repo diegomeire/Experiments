@@ -1,0 +1,296 @@
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 18px/1.8 "Helvetica Neue", sans-serif;
+  color: #777;
+  letter-spacing: 2px;
+    
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("img_parallax.jpg");
+  min-height: 100%;
+
+}
+
+.bgimg-2 {
+  background-image: url("img_parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  justify-content: top;
+  color: #000;
+  display: inline-flex;
+    transform: translateY(-50%);
+}
+
+.caption span.border {
+   position: relative;
+  background-color: rgba(0,0,0,0.9);
+  color: #fff;
+  padding: 50px;
+  font-size: 30px;
+  letter-spacing: 2px;
+    width: 50%;
+    left: 0%;
+    top: 50%;
+    
+
+}
+.caption span.title{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+    
+.caption span.subtitle{
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: lighter;
+}    
+    
+.caption span.subborder {
+   position: relative;    
+  background-color: #000;
+  color: #fff;
+  padding: 50px;
+    margin: 20px;
+  font-size: 15px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+    .column {
+    float: left;
+    width: 40%;
+        margin-left: 20px;
+}
+    
+    .columnRight{
+        float: ;
+    }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    
+    .video{
+        margin-left: 50px;
+        width: 80%;
+    }
+    .videoRight{
+        margin-left: 100px;
+        width: 60%;
+        right: 0px;
+        position: absolute;
+        float: right;
+    }
+    
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+    
+    <link rel="shortcut icon" href="LushGame/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="LushGame/TemplateData/style.css">
+    <script src="Lushgame/TemplateData/UnityProgress.js"></script>  
+    <script src="LushGame/Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "LushGame/Build/LushGame.json", {onProgress: UnityProgress});
+    </script>
+
+    
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+      <span class="border"><span class="title">TECH</span><span class="subtitle"> EXPERIMENTS</span><br>by Diego M</span>
+      
+  </div>
+       
+</div>
+
+    
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+      <div class="row">
+        <div class="column">
+        
+            <h1 style="font-size: 60px">#1</h1>
+        
+        </div>
+        <div class="column">
+        
+            <h1 style="text-align:center;">LUSH Connect<br>LUSH Lens</h1>
+        
+        </div>
+    
+    </div>
+  </div>
+</div>
+
+    
+    
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+
+    
+
+    
+    
+  
+    
+         
+     <h2>1.1 Product Collection - My Products</h2>    
+        <p>LUSH Connect is one incredible tool to entertain Lushies. I feel LUSH could add a few things to keep the users in the app for longer periods. One idea is to allow the user to capture products they purchase or see in the website and keep them in their passports, just like they do when they find a badge in an event. </p>
+    
+
+        <p>The difference in this approach is the way the products would be kept in the app. They would be stored as 3D Objects and LUSH Connect would be able to show them and allow the user to rotate and pinch the product on the screen.
+        </p>    
+        <p>The idea is to engage the user to capture products and see how they look like in 3D - trigger the sense of possession. Even a ranking of Lush collectors can be created to improve the engagement of how has more products in their collections.
+        </p>    
+    
+        <div class="row">
+            <div class="column">
+                <center><img style="scale: 50%" src="MyProducts.png"/></center>
+            </div>
+            
+            <div class="column">
+            
+                <p><br><br><br>A new icon would be added to Lush Connect's main screen. Along with the options to collect badges at events like Summit and Creative Showcase, this icon would open a scrollable catalogue of 3D products you might have collected</p>
+            </div>
+    
+        </div>    
+    
+        
+        <figure>
+            <img src="iPhoneMyLushDemo.png"/>
+            <figcaption>Example of the inclusion of the option My Products, which presents the user's product collection"</figcaption>
+        </figure>
+            
+        <h3>Advantages</h3>
+        <ul>
+            <li>Users stay longer in the app</li>
+            <li>Users can see and even show others how a product looks like</li>
+            <li>Healthy competition between users to see who has more products in theis collection</li>
+            
+            
+        </ul>
+    
+        <br>
+        <br>
+    
+        <h2>1.2 Product Collection - Capture</h2>    
+        <p>The capture of the product can be done using Lush Lens. With Augmented Reality and 3D technology Lush Lens can improve the ability of the user to see products and have a better experience.  </p>
+        <p>One complaint I have, which I share with other customers, is the lack of notion of the dimension of the product when surfing Lush website. If the website had a 3D version of the product where the user could explore the product by rotating and pinching, it would be a great experience. However, 3D can be difficult to embed on a website and still wouldn't give the full dimension of a product. That's where AR steps in.</p>
+        <p>AR is not a new concept for Lush. Lush Lens could be an excelent tool to convert static images on the website into 3D models as close to the real models as possible. Below an example of Augmented Reality on Lush website when the user points the camera at the picure of the Intergalactic?</p>
+       <video width="1024" height="768" controls>
+            <source src="Intergalactic.mp4" type="video/mp4">
+        </video>
+    
+</div>
+    
+    
+   
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+      <div class="row">
+        <div class="column">
+        
+            <h1 style="font-size: 60px">#2</h1>
+        
+        </div>
+        <div class="column">
+        
+            <h1 style="text-align:center;">LUSH Games and<br>Entertainment</h1>
+        
+        </div>
+    
+    </div>
+  </div>
+</div>
+    
+        
+    
+    
+    
+
+      
+<hr>
+    
+ <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Bath Bomb Ninja</div>
+      </div>
+    </div>
+
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">COOL!</span>
+  </div>
+</div>
+
+
+</body></html>
