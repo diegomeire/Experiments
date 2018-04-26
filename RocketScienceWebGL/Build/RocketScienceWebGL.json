@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Rocket Science",
+"dataUrl": "RocketScienceWebGL.data.unityweb",
+"asmCodeUrl": "RocketScienceWebGL.asm.code.unityweb",
+"asmMemoryUrl": "RocketScienceWebGL.asm.memory.unityweb",
+"asmFrameworkUrl": "RocketScienceWebGL.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
