@@ -11,6 +11,10 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/RocketScienceWebGL.json", {onProgress: UnityProgress});
     </script>
+      
+      <script>
+      alert("Instructions\nTo control the Rocket, use UP and DOWN arrows");
+    </script>
   </head>
   <body>
     <div class="webgl-content">
@@ -19,6 +23,7 @@
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">Rocket Science</div>
+        
       </div>
     </div>
   </body>
