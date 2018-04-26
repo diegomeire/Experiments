@@ -10,14 +10,18 @@
     font-style: normal
 }    
     
-body, html {
+    html{
+        
+        overflow: hidden;
+    }
+    
+body {
   height: 100%;
   margin: 0;
   font: 400 18px/1.8 "Helvetica Neue", sans-serif;
   color: #777;
   letter-spacing: 2px;
-    overflow-x: hidden
-    
+    overflow: auto;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -115,9 +119,15 @@ h3 {
     clear: both;
 }
     
+    
     .video{
         margin-left: 50px;
-        width: 80%;
+        width: 50%;
+    }
+    
+    .ar{
+        
+        width: 100%;
     }
     .videoRight{
         margin-left: 100px;
@@ -127,12 +137,44 @@ h3 {
         float: right;
     }
     
+    .myProduct{
+        
+        width: 100%;
+        transform: scale(1.0);
+    }
+    
+    .thumbnail{
+        
+        width: 100%;
+    }
+    
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
+
+    
 }
+    
+    
+    @media all and (max-width: 1024px) {
+
+    .myProduct{
+        
+         width: 100%;
+    }
+        
+        .thumbnail{
+        
+        width: 80%;
+    }
+  
+}
+    
+  
+
+    
 </style>
     
     <link rel="shortcut icon" href="LushGame/TemplateData/favicon.ico">
@@ -188,10 +230,10 @@ h3 {
         <div class="row" style="background-color: lightgray; padding: 50px">
             <h3>Magnum - Pleasure Hunt</h3>
             <div class="column" style="width: 50%">
-                <img style="width: 40%;" src="magnum00.jpg"/>
-                <img style="width: 40%;" src="magnum01.jpg"/><br>
-                <img style="width: 40%;" src="magnum02.jpg"/>   
-                <img style="width: 40%;" src="magnum03.jpg"/>        <br>                        
+                <img class="thumbnail" align="left"  src="magnum00.jpg"/>
+                <img class="thumbnail" align="left"  src="magnum01.jpg"/><br>
+                <img class="thumbnail" align="left"  src="magnum02.jpg"/>   
+                <img class="thumbnail" align="left"  src="magnum03.jpg"/>        <br>                        
     
             </div>
             
@@ -206,7 +248,7 @@ h3 {
         <div class="row" style="background-color: darkgray; padding: 50px">
             <h3>Heineken - Bottle Slider Game</h3>
              <div class="column" style="width: 50%">
-                <img align="center" style="width: 60%; justify-content: right;" src="heineken.jpg"/>
+                <img class="thumbnail" align="left"  src="heineken.jpg"/>
                 
             </div>
             
@@ -238,10 +280,10 @@ h3 {
         <div class="row" style="background-color: orange; padding: 20px">
             <h3 style="font-family: 'LushHandwritten'; padding: 0px; font-size: 80px; text-align: center; color: white">I Zig, You Zag</h3>
              <div class="column" style="width: 50%">
-                <img style="width: 40%;" src="ZigZag01.png"/>
-                <img style="width: 40%;" src="ZigZag02.png"/><br>
-                <img style="width: 40%;" src="ZigZag03.png"/>   
-                <img style="width: 40%;" src="ZigZag04.png"/><br>                        
+                <img class="thumbnail" align="left" src="ZigZag01.png"/>
+                <img class="thumbnail" align="left" src="ZigZag02.png"/>
+                <img class="thumbnail" align="left" src="ZigZag03.png"/>   
+                <img class="thumbnail" align="left" src="ZigZag04.png"/>                        
     
             </div>
             
@@ -265,8 +307,8 @@ h3 {
         <div class="row" style="background-color: lightblue; padding: 20px">
             <h3 style="font-family: 'LushHandwritten'; padding: 0px; font-size: 80px; text-align: center; color: white">Rocket Science</h3>
              <div class="column" style="width: 50%">
-                <img style="width: 40%;" src="RocketScience01.png"/>
-                <img style="width: 50%;" src="RocketScience02.png"/>                     
+                <img class="thumbnail" align="left" src="RocketScience01.png"/>
+                <img class="thumbnail" align="left" src="RocketScience02.png"/>                     
     
             </div>
             
@@ -334,22 +376,26 @@ h3 {
     
         <div class="row">
             <div class="column">
-                <center><img style="scale: 50%" src="MyProducts.png"/></center>
+                <img align="center" class="myProduct" src="MyProducts.png" />
             </div>
             
             <div class="column">
             
-                <p><br><br><br>A new icon would be added to Lush Connect's main screen. Along with the options to collect badges at events like Summit and Creative Showcase, this icon would open a scrollable catalogue of 3D products you might have collected</p>
+                <p>A new icon would be added to Lush Connect's main screen. Along with the options to collect badges at events like Summit and Creative Showcase, this icon would open a scrollable catalogue of 3D products you might have collected</p>
             </div>
     
         </div>    
     
         
-        <figure>
-            <img src="iPhoneMyLushDemo.png"/>
+        <div class="row">
+         <figure>
+            <left><img align="center" class="myProduct" src="iPhoneMyLushDemo.png"/></left>
             <figcaption>Example of the inclusion of the option My Products, which presents the user's product collection"</figcaption>
         </figure>
-            
+         
+        </div>    
+    
+         
         <h3>Advantages</h3>
         <ul>
             <li>Users stay longer in the app</li>
@@ -366,7 +412,7 @@ h3 {
         <p>The capture of the product can be done using Lush Lens. With Augmented Reality and 3D technology Lush Lens can improve the ability of the user to see products and have a better experience.  </p>
         <p>One complaint I have, which I share with other customers, is the lack of notion of the dimension of the product when surfing Lush website. If the website had a 3D version of the product where the user could explore the product by rotating and pinching, it would be a great experience. However, 3D can be difficult to embed on a website and still wouldn't give the full dimension of a product. That's where Augmented Reality steps in.</p>
         <p>AR is not a new concept for Lush. Lush Lens could be an excelent tool to convert static images on the website into 3D models as close to the real models as possible. Below an example of Augmented Reality on Lush website when the user points the camera at the picure of the Intergalactic.</p>
-       <video width="1024" height="768" controls>
+       <video class="ar" controls>
             <source src="Intergalactic.mp4" type="video/mp4">
         </video>
     
